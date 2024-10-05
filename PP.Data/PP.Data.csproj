@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Models\" />
+    <None Remove="Factories\" />
+    <None Remove="Interfaces\" />
+    <None Remove="Models\Responses\" />
+    <None Remove="Models\Requests\" />
+    <None Remove="Interfaces\Async\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Factories\" />
+    <Folder Include="Interfaces\" />
+    <Folder Include="Models\Responses\" />
+    <Folder Include="Models\Requests\" />
+    <Folder Include="Interfaces\Async\" />
+  </ItemGroup>
+</Project>
