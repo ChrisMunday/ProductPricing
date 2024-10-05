@@ -11,9 +11,9 @@ public class ProductFactory : IProductFactory, IProductHistoryFactory
     static readonly List<ProductHistory> ProductHistoryRepo = new();
 
     static ProductFactory()
-	{
+    {
         SeedRepos();
-	}
+    }
 
     private static void SeedRepos()
     {
