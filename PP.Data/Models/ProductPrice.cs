@@ -4,8 +4,8 @@ public sealed class ProductPrice
 {
     public ProductPrice(decimal price)
     {
-		Price = price;
-		Date = DateTime.UtcNow.ToString("yyyy-MM-dd");
+        Price = price;
+        Date = DateTime.UtcNow.ToString("yyyy-MM-dd");
     }
 
     public ProductPrice(decimal price, string date)
@@ -16,6 +16,6 @@ public sealed class ProductPrice
 
     public decimal Price { get; }
 
-	public string Date { get; }
+    public string Date { get; }
 }
 
