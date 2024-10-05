@@ -7,7 +7,7 @@ namespace PP.Api.Controllers
     [Route("api/products")]
     [ApiController]
     public class ProductsController : ControllerBase
-	{
+    {
         private readonly IProductFactoryAsync _productFactory;
         private readonly IProductHistoryFactoryAsync _productHistoryFactory;
 
