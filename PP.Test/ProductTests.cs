@@ -4,7 +4,9 @@ using PP.Data.Factories;
 namespace PP.Test;
 
 /*
- * I had considered using Mock/Setup, however as the repository data is mocked, this was deemed unnesseccary.
+ 
+ I had considered using Mock/Setup. However as the repository data is mocked this was deemed not nesseccary.
+
 */
 
 public class ProductTests
