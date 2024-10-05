@@ -2,13 +2,13 @@
 
 public sealed class ProductResponse
 {
-	public ProductResponse(Product product)
-	{
+    public ProductResponse(Product product)
+    {
         Id = product.Id;
         Name = product.Name;
         Price = product.Price;
         LastUpdated = product.LastUpdated;
-	}
+    }
 
     public int Id { get; }
 
