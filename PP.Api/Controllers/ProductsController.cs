@@ -12,10 +12,10 @@ namespace PP.Api.Controllers
         private readonly IProductHistoryFactoryAsync _productHistoryFactory;
 
         public ProductsController(IProductFactoryAsync productFactory, IProductHistoryFactoryAsync productHistoryFactory)
-		{
+        {
             _productFactory = productFactory;
             _productHistoryFactory = productHistoryFactory;
-		}
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetProducts(CancellationToken cancellationToken)
