@@ -2,7 +2,7 @@
 
 public sealed class ProductPrice
 {
-	public ProductPrice(decimal price)
+    public ProductPrice(decimal price)
     {
 		Price = price;
 		Date = DateTime.UtcNow.ToString("yyyy-MM-dd");
