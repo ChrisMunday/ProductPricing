@@ -3,10 +3,10 @@
 public sealed class ProductPrice
 {
 	public ProductPrice(decimal price)
-	{
+    {
 		Price = price;
 		Date = DateTime.UtcNow.ToString("yyyy-MM-dd");
-	}
+    }
 
     public ProductPrice(decimal price, string date)
     {
