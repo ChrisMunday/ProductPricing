@@ -2,10 +2,10 @@
 
 public sealed class ProductHistory
 {
-	public ProductHistory(int id)
-	{
-		Id = id;
-	}
+    public ProductHistory(int id)
+    {
+        Id = id;
+    }
 
     public int Id { get; }
 
