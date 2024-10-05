@@ -10,4 +10,3 @@ public sealed class ProductListResponse : List<ProductResponse>
 		}
 	}
 }
-

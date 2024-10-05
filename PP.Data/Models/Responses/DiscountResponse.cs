@@ -2,13 +2,13 @@
 
 public sealed class DiscountResponse
 {
-	public DiscountResponse(Product product)
-	{
+    public DiscountResponse(Product product)
+    {
         Id = product.Id;
         Name = product.Name;
         DiscountedPrice = product.DiscountedPrice;
         OriginalPrice = product.OriginalPrice;
-	}
+    }
 
     public int Id { get; }
 
