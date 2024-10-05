@@ -10,7 +10,7 @@ public sealed class NewPriceResponse
         LastUpdated = product.LastUpdated;
     }
 
-	public int Id { get; }
+    public int Id { get; }
 
     public string Name { get; }
 

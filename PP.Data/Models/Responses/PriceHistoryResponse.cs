@@ -11,7 +11,7 @@ public sealed class PriceHistoryResponse
 
     public int Id { get; set; }
 
-	public string Name { get; }
+    public string Name { get; }
 
     public IEnumerable<ProductPrice> PriceHistory { get; }
 }
