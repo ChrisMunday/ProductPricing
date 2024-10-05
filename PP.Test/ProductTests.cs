@@ -83,14 +83,14 @@ public class ProductTests
     public void UpdateProductPrice()
     {
         // Act
-        var factory = _factory.UpdatePrice(1, 150M);
+        var product = _factory.UpdatePrice(1, 150M);
         var productHistory = _factory.GetProductHistory(1);
 
         // Assert
         Assert.Multiple(() => {
-            Assert.That(factory.Id, Is.EqualTo(1));
-            Assert.That(factory.Name, Is.EqualTo("Product A"));
-            Assert.That(factory.NewPrice, Is.EqualTo(150M));
+            Assert.That(product.Id, Is.EqualTo(1));
+            Assert.That(product.Name, Is.EqualTo("Product A"));
+            Assert.That(product.NewPrice, Is.EqualTo(150M));
             Assert.That(productHistory?.PriceHistory.First().Price, Is.EqualTo(150M));
         });
     }
@@ -99,14 +99,14 @@ public class ProductTests
     public void UpdateAnotherProductPrice()
     {
         // Act
-        var factory = _factory.UpdatePrice(2, 300M);
+        var product = _factory.UpdatePrice(2, 300M);
         var productHistory = _factory.GetProductHistory(2);
 
         // Assert
         Assert.Multiple(() => {
-            Assert.That(factory.Id, Is.EqualTo(2));
-            Assert.That(factory.Name, Is.EqualTo("Product B"));
-            Assert.That(factory.NewPrice, Is.EqualTo(300M));
+            Assert.That(product.Id, Is.EqualTo(2));
+            Assert.That(product.Name, Is.EqualTo("Product B"));
+            Assert.That(product.NewPrice, Is.EqualTo(300M));
             Assert.That(productHistory?.PriceHistory.First().Price, Is.EqualTo(300M));
         });
     }
